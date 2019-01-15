@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Book List</title>
+</head>
+<body>
+    <div class="container">
+        <form class="row" id="book-form">
+                <div class="input-field">
+                        <input id="book-title" type="text">
+                        <label for="book-title">Tytuł książki</label>
+                </div>
+                <div class="input-field">
+                        <input id="book-author" type="text">
+                        <label for="book-author">Autor książki</label>
+                </div>
+                <div class="input-field">
+                        <input id="book-isbn" type="text">
+                        <label for="book-isbn">Numer ISBN</label>
+                </div>
+                <button class="btn">Dodaj Książkę                   </button>
+        </form>
+
+        <div class="container">
+            <table class="striped responsive-table">
+                <thead>
+                    <tr>
+                        <th>Tytuł</th>
+                        <th>Autor</Audio></th>
+                        <th>ISBN</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="book-list">
+
+                </tbody>
+            </table>
+        </div>
+            
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
