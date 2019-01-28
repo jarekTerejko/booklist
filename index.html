@@ -15,23 +15,41 @@
     <title>Book List</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container form-message-container">
         <form class="row" id="book-form">
                 <div class="input-field">
-                        <input id="book-title" type="text">
+                        <input id="book-title" type="text" placeholder="Wprowadź tytuł książki">
                         <label for="book-title">Tytuł książki</label>
                 </div>
                 <div class="input-field">
-                        <input id="book-author" type="text">
+                        <input id="book-author" type="text" placeholder="Wprowadź autora książki">
                         <label for="book-author">Autor książki</label>
                 </div>
                 <div class="input-field">
-                        <input id="book-isbn" type="text">
+                        <input id="book-isbn" type="text" placeholder="Wprowadź ISBN książki">
                         <label for="book-isbn">Numer ISBN</label>
                 </div>
-                <button class="btn">Dodaj Książkę                   </button>
+                <button class="btn">Dodaj Książkę</button>
         </form>
-
+        <div id="message" class="message-box"></div>
+        
+    </div>
+    <div class="container">
+        <a href="#book" class="btn orange modal-trigger" id="book-picker">Wybierz książkę</a>
+        <a href="#" class="btn red darken-3" id="delete-books">usuń książki</a>
+        <!-- <button class="btn red darken-3 btn-small delete-btn">usuń</button>
+        <button class="btn green darken-3 btn-small update-btn">zatwierdź</button>
+        <button class="btn blue darken-3 btn-small back-btn">Zrezygnuj</button> -->
+    </div>
+    <div class="modal" id="book">
+        <div class="modal-content">
+            <h5>Kolejna książka do przeczytania nosi tytuł...</h5>
+            <h2 class="book-title">A bunch of text</h2>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+          </div>
+    </div>
         <div class="container">
             <table class="striped responsive-table">
                 <thead>
@@ -48,7 +66,7 @@
             </table>
         </div>
             
-    </div>
+    
 
     <script src="app.js"></script>
 </body>
