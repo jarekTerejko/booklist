@@ -6,29 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="style.css">
     <title>Book List</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">Lista książek</a>  
+            </div>
+        </nav> 
+    </header>
     <div class="container form-message-container">
         <form class="row" id="book-form">
-                <div class="input-field">
-                        <input id="book-title" type="text" placeholder="Wprowadź tytuł książki">
-                        <label for="book-title">Tytuł książki</label>
-                </div>
-                <div class="input-field">
-                        <input id="book-author" type="text" placeholder="Wprowadź autora książki">
-                        <label for="book-author">Autor książki</label>
-                </div>
-                <div class="input-field">
-                        <input id="book-isbn" type="text" placeholder="Wprowadź ISBN książki">
-                        <label for="book-isbn">Numer ISBN</label>
-                </div>
+            <div class="input-field">
+                <input id="book-title" type="text" placeholder="Wprowadź tytuł książki">
+                <label for="book-title">Tytuł książki</label>
+            </div>
+            <div class="input-field">
+                <input id="book-author" type="text" placeholder="Wprowadź autora książki">
+                <label for="book-author">Autor książki</label>
+            </div>
+            <div class="input-field">
+                <input id="book-isbn" type="text" placeholder="Wprowadź ISBN książki">
+                <label for="book-isbn">Numer ISBN</label>
+            </div>
                 <button class="btn">Dodaj Książkę</button>
         </form>
         <div id="message" class="message-box"></div>
@@ -44,7 +51,7 @@
     <div class="modal" id="book">
         <div class="modal-content">
             <h5>Kolejna książka do przeczytania nosi tytuł...</h5>
-            <h2 class="book-title">A bunch of text</h2>
+            <h2 class="book-title">Niestety brak książek w tabeli :(</h2>
           </div>
           <div class="modal-footer">
             <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
@@ -65,9 +72,6 @@
                 </tbody>
             </table>
         </div>
-            
-    
-
     <script src="app.js"></script>
 </body>
 </html>
